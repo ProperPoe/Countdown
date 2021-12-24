@@ -17,9 +17,9 @@ function countdown (){
     const seconds = Math.floor(totalSeconds) % 60;
 
     daysEl.innerHTML = days;
-    hoursEl.innerHTML = hours;
-    minutesEl.innerHTML = mins;
-    secondsEl.innerHTML = seconds;
+    hoursEl.innerHTML = formatTime(hours);
+    minutesEl.innerHTML = formatTime(mins);
+    secondsEl.innerHTML = formatTime(seconds);
 }
 
 function formatTime(time){
@@ -27,7 +27,5 @@ function formatTime(time){
 }
 
 countdown();
-
-formatTime();
 
 setInterval(countdown, 1000)
