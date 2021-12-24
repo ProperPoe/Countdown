@@ -28,4 +28,6 @@ function formatTime(time){
 
 countdown();
 
+formatTime();
+
 setInterval(countdown, 1000)
